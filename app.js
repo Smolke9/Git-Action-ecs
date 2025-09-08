@@ -1,8 +1,10 @@
-const express = require("express");
-const app = express();
+const http = require('http');
+const PORT = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello from Dockerized Node.js App 🚀");
+const server = http.createServer((req, res) => {
+  res.end('Hello from Node.js app in Docker on EC2!');
 });
 
-module.exports = app;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
