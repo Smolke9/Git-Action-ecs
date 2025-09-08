@@ -1,21 +1,8 @@
 {
-  "name": "docker-node-app",
+  "name": "node-app",
   "version": "1.0.0",
-  "description": "A simple Node.js app with Docker and GitHub Actions",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "jest"
-  },
-  "keywords": ["node", "docker", "github-actions"],
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "start": "node app.js"
   }
 }
-
